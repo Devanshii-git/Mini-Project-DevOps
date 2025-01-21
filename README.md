@@ -1,2 +1,2 @@
 # Mini-Project-DevOps
-# Calculator
+# Scientific Calculator
