@@ -8,7 +8,7 @@
   5.Usage <br>
   6.Contributing <br>
 <br>
-## 1.Project Name : calculator
+## 1.Project Name : Calculator
 
 ## 2.Purpose 
   The main motive of the project is to calculate mathematical operations <br>
@@ -20,7 +20,7 @@
   (c)Mulitiplication <br>
   (d)Division <br>
   (e)Percentage <br>
-  (f)roots <br>
+  (f)Roots <br>
   (g)Scientific Calculator <br>
 <br>  
 ### File : Roots.py
@@ -47,7 +47,7 @@
 ## 6.Contributing 
   ### Contributions are Welcome!Pleaxe follow these steps
     1.Fort the repository 
-    2.Create a new branch(git checkout -b features/YoureFeatureName)
-    3.Commit your changes(git commit -m 'Add a feature')
-    4.Push to branch(git push origin feature/YoureFeatureName)
+    2.Create a new branch (git checkout -b features/YoureFeatureName)
+    3.Commit your changes (git commit -m 'Add a feature')
+    4.Push to branch  (git push origin feature/YoureFeatureName)
     5.Open a pull request
