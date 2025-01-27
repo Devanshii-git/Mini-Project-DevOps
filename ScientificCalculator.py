@@ -1,6 +1,7 @@
 import random
 import pyfiglet
 import math
+import Matrix_Operations as MO
 
 class ScientificCalculator:
     #  ANSI color codes 
@@ -74,55 +75,68 @@ class ScientificCalculator:
         print("1. sin  2. cos  3. tan  4. csc  5. sec  6. cot")
         print("7. arcsin  8. arccos  9. arctan")
         print("10. sinh  11. cosh  12. tanh")
-        print("13. Enter a BODMAS equation")
+        print("13. Matrix Operations")
+        print("or Enter a BODMAS equation")
         print("To close the calculator, enter 'EX'")
         x = input("Enter your choice: ")
 
         try:
             if x == '1':  # sin
                 print(f"sin: {math.sin(math.radians(float(input('Enter angle in degrees: '))))}")
+
             elif x == '2':  # cos
                 print(f"cos: {math.cos(math.radians(float(input('Enter angle in degrees: '))))}")
+
             elif x == '3':  # tan
                 print(f"tan: {math.tan(math.radians(float(input('Enter angle in degrees: '))))}")
+
             elif x == '4':  # cosec
                 angle = math.radians(float(input('Enter angle in degrees: ')))
                 print(f"csc: {1 / math.sin(angle) if math.sin(angle) != 0 else 'Undefined'}")
+
             elif x == '5':  # sec
                 angle = math.radians(float(input('Enter angle in degrees: ')))
                 print(f"sec: {1 / math.cos(angle) if math.cos(angle) != 0 else 'Undefined'}")
+
             elif x == '6':  # cot
                 angle = math.radians(float(input('Enter angle in degrees: ')))
                 print(f"cot: {1 / math.tan(angle) if math.tan(angle) != 0 else 'Undefined'}")
+
             elif x == '7':  # Arcsin
                 value = float(input('Enter value between -1 and 1: '))
                 print(f"arcsin: {math.degrees(math.asin(value))}")
+
             elif x == '8':  # Arccos
                 value = float(input('Enter value between -1 and 1: '))
                 print(f"arccos: {math.degrees(math.acos(value))}")
+
             elif x == '9':  # Arctan
                 value = float(input('Enter value: '))
                 print(f"arctan: {math.degrees(math.atan(value))}")
+
             elif x == '10':  # Hyperbolic sine
                 value = float(input('Enter value: '))
                 print(f"sinh: {math.sinh(value)}")
+
             elif x == '11':  # Hyperbolic cosine
                 value = float(input('Enter value: '))
                 print(f"cosh: {math.cosh(value)}")
+
             elif x == '12':  # Hyperbolic tangent
                 value = float(input('Enter value: '))
                 print(f"tanh: {math.tanh(value)}")
-            elif x == '13':  # BODMAS equation
-                equation = input('Enter your equation: ')
-                print(f"Result: {eval(equation)}")
+
+            elif x == '13':  # Matrix
+                print(MO.Matrix_operations.matrix_operations())
+
             elif x.upper() == 'EX':  # Exit
                 ascii_art = pyfiglet.figlet_format("BYE")
                 print(self.LIGHT_GREEN, ascii_art, self.END)
                 exit()
-            else:
-                print("Invalid choice. Please try again later:)")
+
+            else: # BODMAS equation
+                print(f"Result: {eval(x)}")
+
         except Exception as e:
             print(f"Error: {e}")
-
-# Initialize the calculator
-ScientificCalculator()
+        
