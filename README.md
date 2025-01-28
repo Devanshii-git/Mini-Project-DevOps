@@ -22,7 +22,7 @@
   (e)Percentage <br>
   (f)Roots <br>
   (g)Scientific Calculator <br>
-<br>  
+  
 ### File : Roots.py
   Declares whether the entered equation has real roots or imaginary roots or unique roots
 <br>
