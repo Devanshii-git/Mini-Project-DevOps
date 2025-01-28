@@ -12,7 +12,7 @@ parser.add_argument("-a", "--addition", help="It will Add the Value you entered"
 parser.add_argument("-s", "--substraction", help="It will Substract the Value you entered", action="store_true")
 parser.add_argument("-m", "--multiplication", help="It will multiple the Value you entered", action="store_true")
 parser.add_argument("-d", "--division", help="It will divide the Value you entered", action="store_true")
-parser.add_argument("-p", "--percentage", help="It will caluculate the Y percentage of X ", action="store_true")
+parser.add_argument("-p", "--percentage", help="It will calculate the Y percentage of X ", action="store_true")
 parser.add_argument("-r", "--roots", help="It will caluculate the roots of the given Xx^2 + Yx + Z = 0 ", action="store_true")
 parser.add_argument("-S", "--scientific", help="It will Switch to Scientific Calculator", action="store_true")
 
