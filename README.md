@@ -15,7 +15,7 @@
 
 ## 3.Features
 ### File : CLI.py
-  (a)Adittion <br>
+  (a)Addition <br>
   (b)Substraction <br>
   (c)Mulitiplication <br>
   (d)Division <br>
@@ -24,28 +24,35 @@
   (g)Scientific Calculator <br>
 <br>  
 ### File : Roots.py
-  Declares the entered equation has real roots or imaginary roots or unique roots
+  Declares whether the entered equation has real roots or imaginary roots or unique roots
 <br>
 ### File : ScientificCalculator.py
   (a)Random facts to display<br>
   (b)ASCII art <br>
   (c)Welcome message with colors <br>
   (d)Menu to choose from <br>
+  (e)Matrix Operations
+<br>
+### Matrix_Operations
+  (a)Addition <br>
+  (b)Subtraction <br>
+  (c)Multiplication <br>
+  (d)Determinant <br>
 <br>
 ## 4.Installation
   prerequisites  <br>
-    (a)Latest version on python(Python >= 3.7) <br>
-    (b)Install pypfiglet 
+    (a)Install Latest version of python(Python >= 3.7) <br>
+    (b)Install pyfiglet 
         <pre>pip install pyfiglet</pre>
 
 ## 5.Usage
   ### Steps <br>
     1.Run the application: 
         python CLI.py 
-    2.
+    2.python CLI -a ("a" for addition , you can choose any option from CLI)
 
 ## 6.Contributing 
-  ### Contributions are Welcome!Pleaxe follow these steps
+  ### Contributions are Welcome!Please follow these steps
     1.Fort the repository 
     2.Create a new branch (git checkout -b features/YoureFeatureName)
     3.Commit your changes (git commit -m 'Add a feature')
