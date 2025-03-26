@@ -1,4 +1,4 @@
-+# DevOps project 1
+# DevOps project 1
 
 ## Table of Contents
   1.Project Name <br>
